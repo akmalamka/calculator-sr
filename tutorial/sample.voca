@@ -1,0 +1,26 @@
+% NS_B
+<s>        sil
+
+% NS_E
+</s>        sil
+
+% COUNT_V
+COUNT        k aw n t
+
+% OPERATOR
+PLUS        p l ah s
+DIVIDE        d ih v ay d
+MINUS        m ay n ah s
+TIMES        t ay m z
+
+% DIGIT
+FIVE        f ay v
+FOUR        f ao r
+NINE        n ay n
+EIGHT        ey t
+ONE        w ah n
+SEVEN        s eh v ah n
+SIX        s ih k s
+THREE        th r iy
+TWO        t uw
+ZERO        z iy r ow

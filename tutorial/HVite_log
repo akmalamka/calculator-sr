@@ -1,0 +1,331 @@
+HVite -A -D -T 1 -l * -o SWT -b SENT-END -C config -H hmm7/macros -H hmm7/hmmdefs -i aligned.mlf -m -t 250.0 150.0 1000.0 -y lab -a -I words.mlf -S train.scp dict monophones1 
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+#                 NUMCEPS                       12
+#                 CEPLIFTER                     22
+#                 NUMCHANS                      26
+#                 PREEMCOEF               0.970000
+#                 USEHAMMING                  TRUE
+#                 WINDOWSIZE         250000.000000
+#                 SAVEWITHCRC                 TRUE
+#                 SAVECOMPRESSED              TRUE
+#                 TARGETRATE         100000.000000
+#                 TARGETKIND          MFCC_0_D_N_Z
+
+Read 41 physical / 41 logical HMMs
+Label file will be used to align each file
+Aligning File: ../train/mfcc/sample1.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+SENT-END THE TWO WALKED DOWN THE SLOT CANYON OBLIVIOUS TO THE SOUND OF THUNDER IN THE DISTANCE SENT-END  ==  [901 frames] -54.8069 [Ac=-49381.0 LM=0.0] (Act=9.8)
+Aligning File: ../train/mfcc/sample2.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+SENT-END PEANUTS DO NOT GROW ON TREES BUT CASHEWS DO SENT-END  ==  [506 frames] -54.3359 [Ac=-27494.0 LM=0.0] (Act=8.4)
+Aligning File: ../train/mfcc/sample3.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+SENT-END NOBODY LOVES A PIG WEARING LIPSTICK SENT-END  ==  [443 frames] -54.7526 [Ac=-24255.4 LM=0.0] (Act=8.3)
+Aligning File: ../train/mfcc/sample4.mfc
+Created lattice with 8 nodes / 7 arcs from label file
+SENT-END GARLIC ICE CREAM WAS HER FAVORITE SENT-END  ==  [407 frames] -53.5323 [Ac=-21787.7 LM=0.0] (Act=8.0)
+Aligning File: ../train/mfcc/sample5.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+SENT-END COURAGE AND STUPIDITY WERE ALL HE HAD SENT-END  ==  [407 frames] -54.3891 [Ac=-22136.3 LM=0.0] (Act=9.3)
+Aligning File: ../train/mfcc/sample6.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END IT DID NOT MAKE SENSE UNLESS YOU HAD THE POWER TO EAT COLORS SENT-END  ==  [632 frames] -54.9743 [Ac=-34743.7 LM=0.0] (Act=9.6)
+Aligning File: ../train/mfcc/sample7.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+SENT-END THE HUMMINGBIRD WINGS BLURRED WHILE IT EAGERLY SIPPED THE SUGAR WATER FROM THE FEEDER SENT-END  ==  [910 frames] -53.9920 [Ac=-49132.7 LM=0.0] (Act=8.5)
+Aligning File: ../train/mfcc/sample8.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+SENT-END HE STEPPED GINGERLY ONTO THE BRIDGE KNOWING THAT ENCHANTMENT AWAITED ON THE OTHER SIDE SENT-END  ==  [847 frames] -54.5804 [Ac=-46229.6 LM=0.0] (Act=8.7)
+Aligning File: ../train/mfcc/sample9.mfc
+Created lattice with 7 nodes / 6 arcs from label file
+SENT-END IN THAT INSTANT EVERYTHING CHANGED SENT-END  ==  [434 frames] -51.6301 [Ac=-22407.4 LM=0.0] (Act=8.1)
+Aligning File: ../train/mfcc/sample10.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END IT DOES NOT SOUND LIKE THAT WILL EVER BE ON MY TRAVEL LIST SENT-END  ==  [596 frames] -54.8983 [Ac=-32719.4 LM=0.0] (Act=9.7)
+Aligning File: ../train/mfcc/sample11.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+SENT-END NOT ALL PEOPLE WHO WANDER ARE LOST SENT-END  ==  [479 frames] -52.6376 [Ac=-25213.4 LM=0.0] (Act=10.7)
+Aligning File: ../train/mfcc/sample12.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+SENT-END SHE ADVISED HIM TO COME BACK AT ONCE SENT-END  ==  [488 frames] -52.7099 [Ac=-25722.4 LM=0.0] (Act=8.7)
+Aligning File: ../train/mfcc/sample13.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END HARROLD FELT CONFIDENT THAT NOBODY WOULD EVER SUSPECT HIS SPY PIGEON SENT-END  ==  [802 frames] -54.3933 [Ac=-43623.5 LM=0.0] (Act=9.4)
+Aligning File: ../train/mfcc/sample14.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+SENT-END THEY THROW CABBAGE THAT TURNS YOUR BRAIN INTO EMOTIONAL BAGGAGE SENT-END  ==  [748 frames] -54.1109 [Ac=-40475.0 LM=0.0] (Act=8.8)
+Aligning File: ../train/mfcc/sample15.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+SENT-END WE HAVE A LOT OF RAIN IN JUNE SENT-END  ==  [461 frames] -52.7326 [Ac=-24309.7 LM=0.0] (Act=9.7)
+Aligning File: ../train/mfcc/sample16.mfc
+Created lattice with 22 nodes / 21 arcs from label file
+SENT-END HE SET OUT FOR A SHORT WALK BUT NOW ALL HE COULD SEE WERE MANGROVES AND WATER WERE FOR MILES SENT-END  ==  [1000 frames] -54.1987 [Ac=-54198.7 LM=0.0] (Act=8.9)
+Aligning File: ../train/mfcc/sample17.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+SENT-END YOU WILL SEE THE RAINBOW BRIDGE AFTER IT RAINS CATS AND DOGS SENT-END  ==  [704 frames] -54.1426 [Ac=-38116.4 LM=0.0] (Act=8.0)
+Aligning File: ../train/mfcc/sample18.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+SENT-END NOTHING IS AS CAUTIOUSLY CUDDLY AS A PET PORCUPINE SENT-END  ==  [650 frames] -54.7234 [Ac=-35570.2 LM=0.0] (Act=8.1)
+Aligning File: ../train/mfcc/sample19.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+SENT-END TO THE SURPRISE OF EVERYONE THE RAPTURE HAPPENED YESTERDAY BUT IT DID NOT QUITE GO AS EXPECTED SENT-END  ==  [1036 frames] -54.4001 [Ac=-56358.5 LM=0.0] (Act=9.6)
+Aligning File: ../train/mfcc/sample20.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END SHE ALWAYS HAD AN INTERESTING PERSPECTIVE ON WHY THE WORLD MUST BE FLAT SENT-END  ==  [829 frames] -53.7902 [Ac=-44592.0 LM=0.0] (Act=8.9)
+Aligning File: ../train/mfcc/sample21.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+SENT-END THEY IMPROVED DRAMATICALLY ONCE THE LEAD SINGER LEFT SENT-END  ==  [704 frames] -53.5110 [Ac=-37671.8 LM=0.0] (Act=10.3)
+Aligning File: ../train/mfcc/sample22.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+SENT-END THERE WAS NO ICE CREAM IN THE FREEZER NOR DID THEY HAVE MONEY TO GO TO THE STORE SENT-END  ==  [1206 frames] -52.1458 [Ac=-62887.8 LM=0.0] (Act=9.4)
+Aligning File: ../train/mfcc/sample23.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+SENT-END IF YOU DO NOT LIKE TOENAILS YOU PROBABLY SHOULD NOT LOOK AT YOUR FEET SENT-END  ==  [892 frames] -52.3649 [Ac=-46709.5 LM=0.0] (Act=9.5)
+Aligning File: ../train/mfcc/sample24.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+SENT-END HE DRANK LIFE BEFORE SPITTING IT OUT SENT-END  ==  [560 frames] -51.7852 [Ac=-28999.7 LM=0.0] (Act=8.2)
+Aligning File: ../train/mfcc/sample25.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END HE WATCHED THE DANCING PIGLETS WITH PANDA BEAR TUMMIES IN THE SWIMMING POOL SENT-END  ==  [901 frames] -52.1713 [Ac=-47006.3 LM=0.0] (Act=8.6)
+Aligning File: ../train/mfcc/sample26.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+SENT-END AS HE ENTERED THE CHURCH HE COULD HEAR THE SOFT VOICE OF SOMEONE WHISPERING INTO A CELL PHONE SENT-END  ==  [1197 frames] -53.3740 [Ac=-63888.7 LM=0.0] (Act=8.8)
+Aligning File: ../train/mfcc/sample27.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END AFTER EXPLORING THE ABANDONED BUILDING HE STARTED TO BELIEVE IN GHOSTS SENT-END  ==  [901 frames] -53.7010 [Ac=-48384.6 LM=0.0] (Act=10.3)
+Aligning File: ../train/mfcc/sample28.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END EVERYONE SAYS THEY LOVE NATURE UNTIL THEY REALIZE HOW DANGEROUS SHE CAN BE SENT-END  ==  [955 frames] -53.8291 [Ac=-51406.8 LM=0.0] (Act=8.6)
+Aligning File: ../train/mfcc/sample29.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+SENT-END HE POURED ROCKS IN THE DUNGEON OF HIS MIND SENT-END  ==  [596 frames] -52.0232 [Ac=-31005.8 LM=0.0] (Act=10.1)
+Aligning File: ../train/mfcc/sample30.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+SENT-END THREE GENERATIONS WITH SIX DECADES OF LIFE EXPERIENCE SENT-END  ==  [677 frames] -54.6861 [Ac=-37022.5 LM=0.0] (Act=8.8)
+Aligning File: ../train/mfcc/sample31.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+SENT-END THE SIGN SAID THERE WAS ROAD WORK AHEAD SO HE DECIDED TO SPEED UP SENT-END  ==  [892 frames] -52.9310 [Ac=-47214.5 LM=0.0] (Act=8.2)
+Aligning File: ../train/mfcc/sample32.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+SENT-END THE MEMORY WE USED TO SHARE IS NO LONGER COHERENT SENT-END  ==  [739 frames] -51.8585 [Ac=-38323.4 LM=0.0] (Act=8.6)
+Aligning File: ../train/mfcc/sample33.mfc
+Created lattice with 21 nodes / 20 arcs from label file
+SENT-END WHEN I COOK SPAGHETTI I LIKE TO BOIL IT A FEW MINUTES PAST SO THE NOODLES ARE SUPER SLIPPERY SENT-END  ==  [1090 frames] -53.7474 [Ac=-58584.7 LM=0.0] (Act=9.9)
+Aligning File: ../train/mfcc/sample34.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END THERE WERE WHITE OUT CONDITIONS IN THE TOWN SUBSEQUENTLY THE ROADS WERE IMPASSABLE SENT-END  ==  [901 frames] -52.6467 [Ac=-47434.7 LM=0.0] (Act=8.4)
+Aligning File: ../train/mfcc/sample35.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END HE DID NOT WANT TO GO TO THE DENTIST YET HE WENT ANYWAY SENT-END  ==  [730 frames] -52.9217 [Ac=-38632.8 LM=0.0] (Act=10.4)
+Aligning File: ../train/mfcc/sample36.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+SENT-END I ATE A SOCK BECAUSE PEOPLE ON THE INTERNET TOLD ME TO SENT-END  ==  [856 frames] -54.7523 [Ac=-46868.0 LM=0.0] (Act=8.0)
+Aligning File: ../train/mfcc/sample37.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+SENT-END SHE DID NOT CHEAT ON THE TEST FOR IT WAS NOT THE RIGHT THING TO DO SENT-END  ==  [730 frames] -53.0671 [Ac=-38739.0 LM=0.0] (Act=9.8)
+Aligning File: ../train/mfcc/sample38.mfc
+Created lattice with 14 nodes / 13 arcs from label file
+SENT-END THE SPA ATTENDANT APPLIED THE DEEP CLEANING MASK TO THE GENTLEMAN BACK SENT-END  ==  [802 frames] -52.6675 [Ac=-42239.3 LM=0.0] (Act=10.3)
+Aligning File: ../train/mfcc/sample39.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END THE SHARK INFESTED SOUTH PINE CHANNEL WAS THE ONLY WAY IN OR OUT SENT-END  ==  [721 frames] -53.9471 [Ac=-38895.9 LM=0.0] (Act=9.6)
+Aligning File: ../train/mfcc/sample40.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+SENT-END SHE WAS AMAZED BY THE LARGE CHUNKS OF ICE WASHING UP ON THE BEACH SENT-END  ==  [748 frames] -54.2683 [Ac=-40592.7 LM=0.0] (Act=9.2)
+Aligning File: ../train/mfcc/sample41.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END THEY LOOKED UP AT THE SKY AND SAW A MILLION STARS SENT-END  ==  [712 frames] -53.2882 [Ac=-37941.2 LM=0.0] (Act=10.1)
+Aligning File: ../train/mfcc/sample42.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END BLOOD TRANSFUSION IS THE PROCESS OF TRANSFERRING BLOOD OR BLOOD PRODUCTS SENT-END  ==  [829 frames] -54.4605 [Ac=-45147.7 LM=0.0] (Act=8.4)
+Aligning File: ../train/mfcc/sample43.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END HE BARKED ORDERS AT HIS DAUGHTERS BUT THEY JUST STARED BACK WITH AMUSEMENT SENT-END  ==  [892 frames] -54.3247 [Ac=-48457.6 LM=0.0] (Act=7.9)
+Aligning File: ../train/mfcc/sample44.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+SENT-END WISDOM IS EASILY ACQUIRED WHEN HIDING UNDER THE BED WITH A SAUCEPAN ON YOUR HEAD SENT-END  ==  [1045 frames] -53.2796 [Ac=-55677.2 LM=0.0] (Act=9.8)
+Aligning File: ../train/mfcc/sample45.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END TREASURE IS A CONCENTRATION OF WEALTH THAT IS CONSIDERED LOST FORGOTTEN UNTIL REDISCOVERED SENT-END  ==  [1117 frames] -54.1393 [Ac=-60473.6 LM=0.0] (Act=8.4)
+Aligning File: ../train/mfcc/sample46.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END WHEN HE ENCOUNTERED MAIZE FOR THE FIRST TIME HE THOUGHT IT INCREDIBLY CORNY SENT-END  ==  [910 frames] -52.6483 [Ac=-47909.9 LM=0.0] (Act=8.5)
+Aligning File: ../train/mfcc/sample47.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END THE MURDER HORNET WAS DISAPPOINTED BY THE PRECONCEIVED IDEAS PEOPLE HAD OF HIM SENT-END  ==  [964 frames] -53.5389 [Ac=-51611.5 LM=0.0] (Act=9.3)
+Aligning File: ../train/mfcc/sample48.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END I WOULD HAVE GOTTEN THE PROMOTION BUT MY ATTENDANCE WAS NOT GOOD ENOUGH SENT-END  ==  [865 frames] -53.0074 [Ac=-45851.4 LM=0.0] (Act=9.6)
+Aligning File: ../train/mfcc/sample49.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+SENT-END HE WOULD ONLY SURVIVE IF HE KEPT THE FIRE GOING AND HE COULD HEAR THUNDER IN THE DISTANCE SENT-END  ==  [1153 frames] -53.1441 [Ac=-61275.2 LM=0.0] (Act=10.3)
+Aligning File: ../train/mfcc/sample50.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END NEVER UNDERESTIMATE THE WILLINGNESS OF THE GREEDY TO THROW YOU UNDER THE BUS SENT-END  ==  [946 frames] -52.7978 [Ac=-49946.7 LM=0.0] (Act=10.0)
+Aligning File: ../train/mfcc/sample51.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+SENT-END HE ENJOYS PRACTICING HIS BALLET IN THE BATHROOM SENT-END  ==  [650 frames] -52.1902 [Ac=-33923.7 LM=0.0] (Act=8.4)
+Aligning File: ../train/mfcc/sample52.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+SENT-END IT WAS A SLIPPERY SLOPE AND HE WAS WILLING TO SLIDE ALL THE WAY TO THE DEEPEST DEPTHS SENT-END  ==  [1045 frames] -52.7917 [Ac=-55167.4 LM=0.0] (Act=8.8)
+Aligning File: ../train/mfcc/sample53.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END THEY LOOKED UP AT THE SKY AND SAW A MILLION STARS SENT-END  ==  [730 frames] -52.8923 [Ac=-38611.4 LM=0.0] (Act=10.2)
+Aligning File: ../train/mfcc/sample54.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+SENT-END HER DAILY GOAL WAS TO IMPROVE ON YESTERDAY SENT-END  ==  [712 frames] -51.2430 [Ac=-36485.0 LM=0.0] (Act=8.2)
+Aligning File: ../train/mfcc/sample55.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+SENT-END YOU HAVE EVERY RIGHT TO BE ANGRY BUT THAT DOES NOT GIVE YOU THE RIGHT TO BE MEAN SENT-END  ==  [991 frames] -51.9858 [Ac=-51517.9 LM=0.0] (Act=9.8)
+Aligning File: ../train/mfcc/sample56.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END TOMORROW WILL BRING SOMETHING NEW SO LEAVE TODAY AS A MEMORY SENT-END  ==  [847 frames] -54.4794 [Ac=-46144.0 LM=0.0] (Act=9.2)
+Aligning File: ../train/mfcc/sample57.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+SENT-END HE KNEW IT WAS GOING TO BE A BAD DAY WHEN HE SAW MOUNTAIN LIONS ROAMING THE STREETS SENT-END  ==  [1242 frames] -51.6160 [Ac=-64107.0 LM=0.0] (Act=8.8)
+Aligning File: ../train/mfcc/sample58.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END THE EFFICIENCY WE HAVE AT REMOVING TRASH HAS MADE CREATING TRASH MORE ACCEPTABLE SENT-END  ==  [1099 frames] -53.1340 [Ac=-58394.3 LM=0.0] (Act=8.0)
+Aligning File: ../train/mfcc/sample59.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+SENT-END HE FIGURED A FEW STICKS OF DYNAMITE WERE EASIER THAN A FISHING POLE TO CATCH FISH SENT-END  ==  [1278 frames] -50.9303 [Ac=-65088.9 LM=0.0] (Act=7.9)
+Aligning File: ../train/mfcc/sample60.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+SENT-END NOTHING IS AS CAUTIOUSLY CUDDLY AS A PET PORCUPINE SENT-END  ==  [892 frames] -53.0377 [Ac=-47309.6 LM=0.0] (Act=7.8)
+Aligning File: ../train/mfcc/sample61.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+SENT-END THE FOG WAS SO DENSE EVEN A LASER DECIDED IT WASN'T WORTH THE EFFORT SENT-END  ==  [1081 frames] -53.0397 [Ac=-57335.9 LM=0.0] (Act=8.2)
+Aligning File: ../train/mfcc/sample62.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+SENT-END THREE YEARS LATER THE COFFIN WAS STILL FULL OF JELLO SENT-END  ==  [874 frames] -51.4282 [Ac=-44948.2 LM=0.0] (Act=7.6)
+Aligning File: ../train/mfcc/sample63.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+SENT-END HIS THOUGHT PROCESS WAS ON SO MANY LEVELS THAT HE GAVE HIMSELF A PHOBIA OF HEIGHTS SENT-END  ==  [1260 frames] -52.4205 [Ac=-66049.9 LM=0.0] (Act=8.6)
+Aligning File: ../train/mfcc/sample64.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END HE WAS NOT BITTER THAT SHE HAD MOVED ON BUT FROM THE RADISH SENT-END  ==  [910 frames] -50.8631 [Ac=-46285.4 LM=0.0] (Act=8.4)
+Aligning File: ../train/mfcc/sample65.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+SENT-END THIGH HIGH IN THE WATER THE FISHERMAN HOPE FOR DINNER SOON TURNED TO DESPAIR SENT-END  ==  [1108 frames] -50.6669 [Ac=-56138.9 LM=0.0] (Act=9.3)
+Aligning File: ../train/mfcc/sample66.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+SENT-END HE STEPPED GINGERLY ONTO THE BRIDGE KNOWING THAT ENCHANTMENT AWAITED ON THE OTHER SIDE SENT-END  ==  [1233 frames] -51.7147 [Ac=-63764.2 LM=0.0] (Act=9.1)
+Aligning File: ../train/mfcc/sample67.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END THE DOLL SPUN AROUND IN CIRCLES IN HOPES OF COMING ALIVE SENT-END  ==  [892 frames] -51.5409 [Ac=-45974.5 LM=0.0] (Act=7.7)
+Aligning File: ../train/mfcc/sample68.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+SENT-END WHEN NOBODY IS AROUND THE TREES GOSSIP ABOUT THE PEOPLE WHO HAVE WALKED UNDER THEM SENT-END  ==  [1153 frames] -51.2726 [Ac=-59117.3 LM=0.0] (Act=8.4)
+Aligning File: ../train/mfcc/sample69.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+SENT-END WHENEVER HE SAW A RED FLAG WARNING AT THE BEACH HE GRABBED HIS SURFBOARD SENT-END  ==  [991 frames] -52.3089 [Ac=-51838.2 LM=0.0] (Act=8.0)
+Aligning File: ../train/mfcc/sample70.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+SENT-END THE BLINKING LIGHTS OF THE ANTENNA TOWER CAME INTO FOCUS JUST AS I HEARD A LOUD SNAP SENT-END  ==  [1251 frames] -53.2481 [Ac=-66613.3 LM=0.0] (Act=9.0)
+Aligning File: ../train/mfcc/sample71.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END THE LIGHT IN HIS LIFE WAS ACTUALLY A FIRE BURNING ALL AROUND HIM SENT-END  ==  [937 frames] -52.1793 [Ac=-48892.0 LM=0.0] (Act=8.0)
+Aligning File: ../train/mfcc/sample73.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+SENT-END IT WAS A REALLY GOOD MONDAY FOR BEING A SATURDAY SENT-END  ==  [748 frames] -52.3412 [Ac=-39151.2 LM=0.0] (Act=8.5)
+Aligning File: ../train/mfcc/sample72.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END THE GREAT DANE LOOKED MORE LIKE A HORSE THAN A DOG SENT-END  ==  [757 frames] -52.9479 [Ac=-40081.6 LM=0.0] (Act=9.4)
+Aligning File: ../train/mfcc/sample74.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+SENT-END THEY CALLED OUT HER NAME TIME AND AGAIN BUT WERE MET WITH NOTHING BUT SILENCE SENT-END  ==  [1018 frames] -52.0380 [Ac=-52974.7 LM=0.0] (Act=9.9)
+Aligning File: ../train/mfcc/sample75.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+SENT-END THE SKY IS CLEAR THE STARS ARE TWINKLING SENT-END  ==  [659 frames] -52.9290 [Ac=-34880.2 LM=0.0] (Act=7.6)
+Aligning File: ../train/mfcc/sample76.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END EVERY MANAGER SHOULD BE ABLE TO RECITE AT LEAST TEN NURSERY RHYMES BACKWARD SENT-END  ==  [1054 frames] -52.1464 [Ac=-54962.3 LM=0.0] (Act=8.1)
+Aligning File: ../train/mfcc/sample77.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+SENT-END THEIR ARGUMENT COULD BE HEARD ACROSS THE PARKING LOT SENT-END  ==  [757 frames] -53.0865 [Ac=-40186.5 LM=0.0] (Act=8.3)
+Aligning File: ../train/mfcc/sample78.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+SENT-END WHEN HE HAD TO PICNIC ON THE BEACH HE PURPOSELY PUT SAND IN OTHER PEOPLE FOOD SENT-END  ==  [1117 frames] -52.3883 [Ac=-58517.7 LM=0.0] (Act=8.5)
+Aligning File: ../train/mfcc/sample79.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+SENT-END HE FOUND THE END OF THE RAINBOW AND WAS SURPRISED AT WHAT HE FOUND THERE SENT-END  ==  [1027 frames] -53.4951 [Ac=-54939.5 LM=0.0] (Act=9.4)
+Aligning File: ../train/mfcc/sample80.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END WE HAVE NEVER BEEN TO ASIA NOR HAVE WE VISITED AFRICA SENT-END  ==  [784 frames] -53.5695 [Ac=-41998.5 LM=0.0] (Act=9.1)
+Aligning File: ../train/mfcc/sample81.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END HE HAD A VAGUE SENSE THAT TREES GAVE BIRTH TO DINOSAURS SENT-END  ==  [838 frames] -52.9448 [Ac=-44367.8 LM=0.0] (Act=9.1)
+Aligning File: ../train/mfcc/sample82.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+SENT-END HE HAD UNKNOWINGLY TAKEN UP SLEEPWALKING AS A NIGHTTIME HOBBY SENT-END  ==  [919 frames] -52.0408 [Ac=-47825.5 LM=0.0] (Act=7.3)
+Aligning File: ../train/mfcc/sample83.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END THE TOUR BUS WAS PACKED WITH TEENAGE GIRLS HEADING TOWARD THEIR NEXT ADVENTURE SENT-END  ==  [1036 frames] -52.8245 [Ac=-54726.2 LM=0.0] (Act=7.8)
+Aligning File: ../train/mfcc/sample84.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+SENT-END HE TOLD US A VERY EXCITING ADVENTURE STORY SENT-END  ==  [730 frames] -53.8904 [Ac=-39340.0 LM=0.0] (Act=7.3)
+Aligning File: ../train/mfcc/sample85.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+SENT-END THE MEMORY WE USED TO SHARE IS NO LONGER COHERENT SENT-END  ==  [712 frames] -51.4777 [Ac=-36652.2 LM=0.0] (Act=8.1)
+Aligning File: ../train/mfcc/sample86.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+SENT-END DO NOT PUT PEANUT BUTTER ON THE DOG NOSE SENT-END  ==  [578 frames] -52.6566 [Ac=-30435.5 LM=0.0] (Act=9.5)
+Aligning File: ../train/mfcc/sample87.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+SENT-END HE ENJOYS PRACTICING HIS BALLET IN THE BATHROOM SENT-END  ==  [704 frames] -52.0716 [Ac=-36658.4 LM=0.0] (Act=8.3)
+Aligning File: ../train/mfcc/sample88.mfc
+Created lattice with 9 nodes / 8 arcs from label file
+SENT-END NOT ALL PEOPLE WHO WANDER ARE LOST SENT-END  ==  [578 frames] -52.3043 [Ac=-30231.9 LM=0.0] (Act=8.6)
+Aligning File: ../train/mfcc/sample89.mfc
+Created lattice with 10 nodes / 9 arcs from label file
+SENT-END THE SUDDEN RAINSTORM WASHED CROCODILES INTO THE OCEAN SENT-END  ==  [775 frames] -52.8570 [Ac=-40964.1 LM=0.0] (Act=8.2)
+Aligning File: ../train/mfcc/sample90.mfc
+Created lattice with 15 nodes / 14 arcs from label file
+SENT-END HE DID NOT WANT TO GO TO THE DENTIST YET HE WENT ANYWAY SENT-END  ==  [874 frames] -51.1888 [Ac=-44739.0 LM=0.0] (Act=8.6)
+Aligning File: ../train/mfcc/sample91.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+SENT-END AS THE RENTAL CAR ROLLED TO A STOP ON THE DARK ROAD HER FEAR INCREASED BY THE MOMENT SENT-END  ==  [1206 frames] -53.3725 [Ac=-64367.3 LM=0.0] (Act=9.0)
+Aligning File: ../train/mfcc/sample92.mfc
+Created lattice with 12 nodes / 11 arcs from label file
+SENT-END TWO MORE DAYS AND ALL HIS PROBLEMS WOULD BE SOLVED SENT-END  ==  [712 frames] -52.3232 [Ac=-37254.2 LM=0.0] (Act=7.1)
+Aligning File: ../train/mfcc/sample93.mfc
+Created lattice with 20 nodes / 19 arcs from label file
+SENT-END AS HE ENTERED THE CHURCH HE COULD HEAR THE SOFT VOICE OF SOMEONE WHISPERING INTO A CELL PHONE SENT-END  ==  [1296 frames] -52.3912 [Ac=-67899.0 LM=0.0] (Act=8.3)
+Aligning File: ../train/mfcc/sample94.mfc
+Created lattice with 13 nodes / 12 arcs from label file
+SENT-END SHE OPENED UP HER THIRD BOTTLE OF WINE OF THE NIGHT SENT-END  ==  [748 frames] -52.1317 [Ac=-38994.5 LM=0.0] (Act=9.9)
+Aligning File: ../train/mfcc/sample95.mfc
+Created lattice with 18 nodes / 17 arcs from label file
+SENT-END GIVING DIRECTIONS THAT THE MOUNTAINS ARE TO THE WEST ONLY WORKS WHEN YOU CAN SEE THEM SENT-END  ==  [1188 frames] -51.9106 [Ac=-61669.8 LM=0.0] (Act=7.7)
+Aligning File: ../train/mfcc/sample96.mfc
+Created lattice with 19 nodes / 18 arcs from label file
+SENT-END THE TSUNAMI WAVE CRASHED AGAINST THE RAISED HOUSES AND BROKE THE PILINGS AS IF THEY WERE TOOTHPICKS SENT-END  ==  [1350 frames] -52.8016 [Ac=-71282.2 LM=0.0] (Act=8.2)
+Aligning File: ../train/mfcc/sample97.mfc
+Created lattice with 17 nodes / 16 arcs from label file
+SENT-END WHEN NOBODY IS AROUND THE TREES GOSSIP ABOUT THE PEOPLE WHO HAVE WALKED UNDER THEM SENT-END  ==  [1135 frames] -53.0667 [Ac=-60230.7 LM=0.0] (Act=8.3)
+Aligning File: ../train/mfcc/sample98.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+SENT-END IT TURNS OUT YOU DO NOT NEED ALL THAT STUFF YOU INSISTED YOU DID SENT-END  ==  [1027 frames] -51.7473 [Ac=-53144.5 LM=0.0] (Act=7.9)
+Aligning File: ../train/mfcc/sample99.mfc
+Created lattice with 16 nodes / 15 arcs from label file
+SENT-END THE COMPLICATED SCHOOL HOMEWORK LEFT THE PARENTS TRYING TO HELP THEIR KIDS QUITE CONFUSED SENT-END  ==  [1153 frames] -53.6615 [Ac=-61871.7 LM=0.0] (Act=8.4)
+Aligning File: ../train/mfcc/sample100.mfc
+Created lattice with 11 nodes / 10 arcs from label file
+SENT-END THE SECRET INGREDIENT TO HIS WONDERFUL LIFE WAS CRIME SENT-END  ==  [802 frames] -53.1496 [Ac=-42626.0 LM=0.0] (Act=7.8)
+
+HTK Configuration Parameters[10]
+  Module/Tool     Parameter                  Value
+                  NUMCEPS                       12
+                  CEPLIFTER                     22
+                  NUMCHANS                      26
+                  PREEMCOEF               0.970000
+                  USEHAMMING                  TRUE
+                  WINDOWSIZE         250000.000000
+                  SAVEWITHCRC                 TRUE
+                  SAVECOMPRESSED              TRUE
+                  TARGETRATE         100000.000000
+                  TARGETKIND          MFCC_0_D_N_Z
+
