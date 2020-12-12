@@ -7,24 +7,33 @@ Stat: check_hmm_restriction: an HMM with several arcs from initial state found: 
 Stat: rdhmmdef: this HMM requires multipath handling at decoding
 Stat: rdhmmdef: no <SID> embedded
 Stat: rdhmmdef: assign SID by the order of appearance
-Stat: init_phmm: defined HMMs:    41
-Stat: init_phmm: logical names:    41
+Stat: init_phmm: defined HMMs:  1410
+Stat: init_phmm: loading ascii hmmlist
+Stat: init_phmm: logical names: 24402 in HMMList
 Stat: init_phmm: base phones:    41 used in logical
 Stat: init_phmm: finished reading HMM definitions
 STAT: m_fusion: force multipath HMM handling by user request
+STAT: making pseudo bi/mono-phone for IW-triphone
+Stat: hmm_lookup: 799 pseudo phones are added to logical HMM list
 STAT: *** AM00 _default loaded
 STAT: *** loading LM00 _default
-STAT: reading [sample.dfa] and [sample.dict]...
 Stat: init_voca: read 17 words
-Error: gzfile: unable to open sample.dfa.forward
-Error: init_dfa: failed to open sample.dfa.forward
-STAT: done
-STAT: Gram #0 sample registered
-STAT: Gram #0 sample: new grammar loaded, now mash it up for recognition
-STAT: Gram #0 sample: extracting category-pair constraint for the 1st pass
-STAT: Gram #0 sample: installed
-STAT: Gram #0 sample: turn on active
-STAT: grammar update completed
+Stat: init_ngram: reading in ARPA forward n-gram from calculator.lm
+Stat: ngram_read_arpa: this is 3-gram file
+Stat: ngram_read_arpa: reading 1-gram part...
+Stat: ngram_read_arpa: read 17 1-gram entries
+Stat: ngram_read_arpa: reading 2-gram part...
+Stat: ngram_read_arpa: 2-gram read 0 (0%)
+Stat: ngram_read_arpa: 2-gram read 101 end
+Stat: ngram_read_arpa: reading 3-gram part...
+Stat: ngram_read_arpa: 3-gram read 0 (0%)
+Stat: ngram_read_arpa: 3-gram read 490 end
+Warning: ngram_compact_context: found a 2-gram that has non-zero back-off weight but not a context of upper N-gram (-0.301000)
+Warning: ngram_compact_context: context compaction disabled
+Stat: init_ngram: neither "<unk>" nor "<UNK>" was found, assuming close vocabulary LM
+Stat: init_ngram: finished reading n-gram
+Stat: init_ngram: mapping dictonary words to n-gram entries
+Stat: init_ngram: finished word-to-ngram mapping
 STAT: *** LM00 _default loaded
 STAT: ------
 STAT: All models are ready, go for final fusion
@@ -35,10 +44,11 @@ STAT: 1 MFCC modules created
 STAT: [2] create recognition processing instance(s) with AM and LM
 STAT: composing recognizer instance SR00 _default (AM00 _default, LM00 _default)
 STAT: Building HMM lexicon tree
-STAT: lexicon size: 211 nodes
+STAT: lexicon size: 219 nodes
 STAT: coordination check passed
-STAT: multi-gram: beam width set to 200 (guess) by lexicon change
-STAT: wchmm (re)build completed
+STAT: make successor lists for unigram factoring
+STAT: done
+STAT:  1-gram factoring values has been pre-computed
 STAT: SR00 _default composed
 STAT: [3] initialize for acoustic HMM calculation
 Stat: outprob_init: state-level mixture PDFs, use calc_mix()
@@ -121,13 +131,13 @@ Configuration of Modules
 
  Acoustic Model (with input parameter spec.):
  - AM00 "_default"
-	hmmfilename=hmm9/hmmdefs
+	hmmfilename=hmm15/hmmdefs
+	hmmmapfilename=tiedlist
 
  Language Model:
  - LM00 "_default"
-	grammar #1:
-	    dfa  = sample.dfa
-	    dict = sample.dict
+	vocabulary filename=calculator.dic
+	forward n-gram filename=calculator.lm
 
  Recognizer:
  - SR00 "_default" (AM00, LM00)
@@ -171,8 +181,8 @@ Acoustic Model(s)
 [AM00 "_default"]
 
  HMM Info:
-    41 models, 120 states, 120 mpdfs, 120 Gaussians are defined
-	      model type = context dependency handling OFF
+    1410 models, 166 states, 166 mpdfs, 166 Gaussians are defined
+	      model type = context dependency handling ON
       training parameter = MFCC_N_D_Z_0
 	   vector length = 25
 	number of stream = 1
@@ -190,16 +200,21 @@ Acoustic Model(s)
   top N mixtures to calc = 2 / 0  (-tmix)
     short pause HMM name = "sp" specified, "sp" applied (physical)  (-sp)
   cross-word CD on pass1 = handle by approx. (use max. prob. of same LC)
-   sp transition penalty = -70.0
+   sp transition penalty = -5.0
 
 ------------------------------------------------------------
 Language Model(s)
 
-[LM00 "_default"] type=grammar
+[LM00 "_default"] type=n-gram
 
- DFA grammar info:
-      7 nodes, 6 arcs, 5 terminal(category) symbols
-      category-pair matrix: 28 bytes (640 bytes allocated)
+ N-gram info:
+	            spec = 3-gram, forward (left-to-right)
+	        OOV word = none (assume close vocabulary)
+	    wordset size = 17
+	  1-gram entries =         17  (  0.0 MB)
+	  2-gram entries =        101  (  0.0 MB)
+	  3-gram entries =        490  (  0.0 MB)
+	           pass1 = 2-gram in the forward n-gram
 
  Vocabulary Info:
         vocabulary size  = 17 words, 56 models
@@ -209,7 +224,8 @@ Language Model(s)
        words under class = not exist
 
  Parameters:
-   found sp category IDs =
+	(-silhead)head sil word = 0: "<s> @0.000000 [<s>] sil(sil)"
+	(-siltail)tail sil word = 1: "</s> @0.000000 [</s>] sil(sil)"
 
 ------------------------------------------------------------
 Recognizer(s)
@@ -217,16 +233,23 @@ Recognizer(s)
 [SR00 "_default"]  AM00 "_default"  +  LM00 "_default"
 
  Lexicon tree:
-	 total node num =    211
-	  root node num =     15
+	 total node num =    219
+	  root node num =     17
+	(15 hi-freq. words are separated from tree lexicon)
 	  leaf node num =     17
+	 fact. node num =     17
 
-	(-penalty1) IW penalty1 = +5.0
-	(-penalty2) IW penalty2 = +20.0
+ Inter-word N-gram cache: 
+	root node to be cached = 17 / 17 (isolated only)
+	word ends to be cached = 17 (all)
+	  max. allocation size = 0MB
+	(-lmp)  pass1 LM weight = 8.0  ins. penalty = -2.0
+	(-lmp2) pass2 LM weight = 8.0  ins. penalty = -2.0
+	(-transp)trans. penalty = +0.0 per word
 	(-cmalpha)CM alpha coef = 0.050000
 
 	 inter-word short pause = on (append "sp" for each word tail)
-	  sp transition penalty = -70.0
+	  sp transition penalty = -5.0
  Search parameters: 
 	    multi-path handling = yes, multi-path mode enabled
 	(-b) trellis beam width = 200 (-1 or not specified - guessed)
@@ -235,4 +258,72 @@ Recognizer(s)
 	(-s)  search stack size = 500
 	(-m)    search overflow = after 2000 hypothesis poped
 	        2nd pass method = searching sentence, generating N-best
-	(-b2)  pass2 be
+	(-b2)  pass2 beam width = 200
+	(-lookuprange)lookup range= 5  (tm-5 <= t <tm+5)
+	(-sb)2nd scan beamthres = 200.0 (in logscore)
+	(-n)        search till = 1 candidates found
+	(-output)    and output = 1 candidates out of above
+	 IWCD handling:
+	   1st pass: approximation (use max. prob. of same LC)
+	   2nd pass: loose (apply when hypo. is popped and scanned)
+	 factoring score: 1-gram prob. (statically assigned beforehand)
+	short pause segmentation = on
+	      sp duration length = 10 frames
+	fall back on search fail = off, returns search failure
+
+------------------------------------------------------------
+Decoding algorithm:
+
+	1st pass input processing = real time, on-the-fly
+	1st pass method = 1-best approx. generating indexed trellis
+	output word confidence measure based on search-time scores
+
+------------------------------------------------------------
+FrontEnd:
+
+ Input stream:
+	             input type = waveform
+	           input source = microphone
+	    device API          = default
+	          sampling freq. = 16000 Hz
+	         threaded A/D-in = supported, on
+	   zero frames stripping = on
+	         silence cutting = on
+	             level thres = 4000 / 32767
+	         zerocross thres = 60 / sec.
+	             head margin = 300 msec.
+	             tail margin = 400 msec.
+	              chunk size = 1000 samples
+	       FVAD switch value = -1 (disabled)
+	    long-term DC removal = off
+	    level scaling factor = 1.00 (disabled)
+	      reject short input = off
+	      reject  long input = off
+
+----------------------- System Information end -----------------------
+
+Notice for feature extraction (01),
+	*************************************************************
+	* Cepstral mean normalization for real-time decoding:       *
+	* NOTICE: The first input may not be recognized, since      *
+	*         no initial mean is available on startup.          *
+	*************************************************************
+STAT: AD-in thread created
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: sample 0-4095 is invalid, stripped
+Warning: strip: 
