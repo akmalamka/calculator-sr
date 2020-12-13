@@ -100,6 +100,7 @@ CONSIDERED      [CONSIDERED]    k ah n s ih d er d sp
 COOK            [COOK]          k uh k sp
 CORNY           [CORNY]         k ao r n iy sp
 COULD           [COULD]         k uh d sp
+COUNT           [COUNT]         k aw n t
 COURAGE         [COURAGE]       k er ih jh sp
 CRASHED         [CRASHED]       k r ae sh t sp
 CREAM           [CREAM]         k r iy m sp
@@ -129,6 +130,7 @@ DINOSAURS       [DINOSAURS]     d ay n ah s ao r z sp
 DIRECTIONS      [DIRECTIONS]    d er eh k sh ah n z sp
 DISAPPOINTED    [DISAPPOINTED]  d ih s ah p oy n t ih d sp
 DISTANCE        [DISTANCE]      d ih s t ah n s sp
+DIVIDE          [DIVIDE]        d ih v ay d
 DO              [DO]            d uw sp
 DOES            [DOES]          d ah z sp
 DOG             [DOG]           d ao g sp
@@ -145,6 +147,7 @@ EASILY          [EASILY]        iy z ah l iy sp
 EAT             [EAT]           iy t sp
 EFFICIENCY      [EFFICIENCY]    ih f ih sh ah n s iy sp
 EFFORT          [EFFORT]        eh f er t sp
+EIGHT           [EIGHT]         ey t
 EMOTIONAL       [EMOTIONAL]     ih m ow sh ah n ah l sp
 ENCHANTMENT     [ENCHANTMENT]   eh n ch ae n t m ah n t sp
 ENCOUNTERED     [ENCOUNTERED]   ih n k aw n t er d sp
@@ -173,6 +176,7 @@ FIRST           [FIRST]         f er s t sp
 FISH            [FISH]          f ih sh sp
 FISHERMAN       [FISHERMAN]     f ih sh er m ae n sp
 FISHING         [FISHING]       f ih sh ih ng sp
+FIVE            [FIVE]          f ay v
 FLAG            [FLAG]          f l ae g sp
 FLAT            [FLAT]          f l ae t sp
 FOCUS           [FOCUS]         f ow k ah s sp
@@ -181,6 +185,7 @@ FOOD            [FOOD]          f uw d sp
 FOR             [FOR]           f ao r sp
 FORGOTTEN       [FORGOTTEN]     f er g aa t ah n sp
 FOUND           [FOUND]         f aw n d sp
+FOUR            [FOUR]          f ao r
 FREEZER         [FREEZER]       f r iy z er sp
 FROM            [FROM]          f r ah m sp
 FULL            [FULL]          f uh l sp
@@ -293,6 +298,7 @@ MET             [MET]           m eh t sp
 MILES           [MILES]         m ay l z sp
 MILLION         [MILLION]       m ih l y ah n sp
 MIND            [MIND]          m ay n d sp
+MINUS           [MINUS]         m ay n ah s
 MINUTES         [MINUTES]       m ih n ah t s sp
 MOMENT          [MOMENT]        m ow m ah n t sp
 MONDAY          [MONDAY]        m ah n d iy sp
@@ -312,6 +318,7 @@ NEW             [NEW]           n uw sp
 NEXT            [NEXT]          n eh k s t sp
 NIGHT           [NIGHT]         n ay t sp
 NIGHTTIME       [NIGHTTIME]     n ay t t ay m sp
+NINE            [NINE]          n ay n
 NO              [NO]            n ow sp
 NOBODY          [NOBODY]        n ow b aa d iy sp
 NOODLES         [NOODLES]       n uw d ah l z sp
@@ -325,6 +332,7 @@ OBLIVIOUS       [OBLIVIOUS]     ah b l ih v iy ah s sp
 OCEAN           [OCEAN]         ow sh ah n sp
 OF              [OF]            ah v sp
 ON              [ON]            aa n sp
+ONE             [ONE]           w ah n
 ONCE            [ONCE]          w ah n s sp
 ONLY            [ONLY]          ow n l iy sp
 ONTO            [ONTO]          aa n t uw sp
@@ -351,6 +359,7 @@ PIGEON          [PIGEON]        p ih jh ah n sp
 PIGLETS         [PIGLETS]       p ih g l ih t s sp
 PILINGS         [PILINGS]       p ay l ih ng z sp
 PINE            [PINE]          p ay n sp
+PLUS            [PLUS]          p l ah s
 POLE            [POLE]          p ow l sp
 POOL            [POOL]          p uw l sp
 PORCUPINE       [PORCUPINE]     p ao r k y ah p ay n sp
@@ -400,6 +409,7 @@ SENSE           [SENSE]         s eh n s sp
 SENT-END        []              sil
 SENT-START      []              sil
 SET             [SET]           s eh t sp
+SEVEN           [SEVEN]         s eh v ah n
 SHARE           [SHARE]         sh eh r sp
 SHARK           [SHARK]         sh aa r k sp
 SHE             [SHE]           sh iy sp
@@ -474,6 +484,7 @@ THREE           [THREE]         th r iy sp
 THROW           [THROW]         th r ow sp
 THUNDER         [THUNDER]       th ah n d er sp
 TIME            [TIME]          t ay m sp
+TIMES           [TIMES]         t ay m z
 TO              [TO]            t uw sp
 TODAY           [TODAY]         t ah d ey sp
 TOENAILS        [TOENAILS]      t ow n ey l z sp
@@ -554,3 +565,4 @@ YESTERDAY       [YESTERDAY]     y eh s t er d ey sp
 YET             [YET]           y eh t sp
 YOU             [YOU]           y uw sp
 YOUR            [YOUR]          y ao r sp
+ZERO            [ZERO]          z iy r ow
